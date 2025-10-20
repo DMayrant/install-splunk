@@ -1,0 +1,11 @@
+# app_paths define locations for different types of apps
+app_paths:
+  default: /opt/splunk/etc/apps
+  deployment: /opt/splunk/etc/deployment-apps
+
+# Other configuration parameters
+appserver:
+  port: 8065
+cluster_master_url: null
+connection_timeout: 0
+# ... more settings
