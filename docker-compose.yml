@@ -5,7 +5,7 @@ services:
     hostname: splunk-standalone
     environment:
       - SPLUNK_START_ARGS=--accept-license
-      - SPLUNK_PASSWORD=your_secure_password # Replace with a strong password
+      - SPLUNK_PASSWORD=admin123 # Replace with a strong password
       - SPLUNK_LICENSE_URI=Free # Or path to your Enterprise license file
     ports:
       - "8000:8000" # Splunk Web UI
