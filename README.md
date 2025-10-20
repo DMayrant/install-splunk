@@ -6,7 +6,7 @@ Splunk will help organizations determine the root cause of analysis the disaster
 
 The file in this repository contains a Splunk YAML file that can be cloned via GitHub Actions and containerized and ran on port 8065
 
-      docker build -t my-splunk
+      docker build -t my-splunk .
       
       docker compose up -d 
 
