@@ -8,6 +8,8 @@ The file in this repository contains a Splunk YAML file that can be cloned via G
 ports 8089, 9997 or 8000 can be used
 
       docker build -t my-splunk .
+
+
       
       docker compose up -d 
 
