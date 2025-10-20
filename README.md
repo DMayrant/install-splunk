@@ -5,11 +5,11 @@ Logs can be sent to splunk rather than relying only on S3 during log rentention 
 Splunk will help organizations determine the root cause of analysis the disaster. 
 
 The file in this repository contains a Splunk YAML file that can be cloned via GitHub Actions and containerized 
-ports 8089, 9997 or 8000 can be used
+
 
       docker build -t my-splunk .
 
-
+Ports 8000, 8089 or 9997 can be used 
       
       docker compose up -d 
 
