@@ -1,11 +1,22 @@
-# app_paths define locations for different types of apps
-app_paths:
-  default: /opt/splunk/etc/apps
-  deployment: /opt/splunk/etc/deployment-apps
+version: '3.8'
+services:
+  splunk:
+    image: splunk/splunk:latest
+    hostname: splunk-standalone
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=your_secure_password # Replace with a strong password
+      - SPLUNK_LICENSE_URI=Free # Or path to your Enterprise license file
+    ports:
+      - "8000:8000" # Splunk Web UI
+      - "8088:8088" # HEC (HTTP Event Collector)
+      - "8089:8089" # Management port
+      - "9997:9997" # Forwarder port
+    volumes:
+      - splunk_data:/opt/splunk/var
+      - splunk_etc:/opt/splunk/etc
+    restart: unless-stopped
 
-# Other configuration parameters
-appserver:
-  port: 8065
-cluster_master_url: null
-connection_timeout: 0
-# ... more settings
+volumes:
+  splunk_data:
+  splunk_etc:
