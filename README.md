@@ -1,6 +1,6 @@
 # Install Splunk using docker compose
 
-Splunk is a third party resourse used for for storing data, big data analytics and for operational intelligence. 
+Splunk is a third party resourse used for for storing data, for big data analytics and for operational intelligence. 
 Logs can be sent to splunk rather than relying only on S3 during log rentention policy, for real-time big data analytics and for advanced security capabilities. 
 Splunk will help organizations determine the root cause of analysis the disaster. 
 
